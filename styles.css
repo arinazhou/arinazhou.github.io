@@ -491,15 +491,15 @@ img{max-width:100%;display:block}
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:28px 17px 20px;
-  min-height:420px;
+  padding:20px 17px;
+  min-height:0;
 }
 .card-image.has-video .image-tag{color:#f0ddd2}
 .project-video{
-  max-height:460px;
+  max-height:300px;
   max-width:100%;
   width:auto;
-  border-radius:22px;
+  border-radius:18px;
   box-shadow:0 20px 50px rgba(0,0,0,.35);
 }
 
@@ -600,38 +600,14 @@ img{max-width:100%;display:block}
   gap:76px;
   align-items:center;
 }
-.about-collage{
-  min-height:570px;
-  display:grid;
-  grid-template-columns:1.3fr .7fr;
-  grid-template-rows:1fr 1fr;
-  gap:14px;
-}
-.about-big,.about-small{
+.about-photo{
   border-radius:28px;
-  display:grid;
-  place-items:center;
-  border:1px dashed rgba(140,74,50,.32);
-  color:#76513f;
-  font-size:.7rem;
-  letter-spacing:.12em;
-  font-weight:700;
-  text-align:center;
-  padding:20px;
   overflow:hidden;
-}
-.about-big{
-  grid-row:1/3;
-  background:linear-gradient(145deg,#e8c2a9,#d8b19a);
-}
-.about-small{background:#bbc1b0}
-.about-small.has-photo{
-  background:none;
-  border:none;
-  padding:0;
   box-shadow:var(--shadow);
+  min-height:480px;
+  transform:rotate(-1.2deg);
 }
-.about-small.has-photo img{
+.about-photo img{
   width:100%;
   height:100%;
   object-fit:cover;
@@ -764,15 +740,14 @@ blockquote{
   .project h3{font-size:2.45rem}
   .metric-row{grid-template-columns:1fr 1fr}
   .metric:last-child{display:none}
-  .card-image.has-video{min-height:340px;padding:22px 12px 16px}
-  .project-video{max-height:340px}
+  .project-video{max-height:240px}
   .gallery-copy,.gallery-scroll{padding-left:24px;padding-right:24px}
   .gallery-copy h3{font-size:2.45rem}
   .gallery-scroll img{height:230px;max-width:70vw}
   .gallery-hint{margin-left:24px;margin-right:24px}
   .toolbox-grid{grid-template-columns:1fr}
   .toolbox-cell{border-right:0}
-  .about-collage{min-height:470px}
+  .about-photo{min-height:340px;transform:none}
   .experience-row{grid-template-columns:1fr;gap:9px}
   .exp-desc{grid-column:auto}
   .contact-actions{grid-template-columns:1fr}
