@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arina Zhou — Software & Data Engineer</title>
+  <meta name="description" content="Arina Zhou's portfolio — software engineering, data engineering, research, and selected projects." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Arina Zhou — Software & Data Engineer" />
+  <meta property="og:description" content="UIUC student building GPU-accelerated ML systems, data pipelines, and research tools — with a soft spot for birds." />
+  <meta property="og:url" content="https://arinazhou.github.io" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Arina Zhou — Software & Data Engineer" />
+  <meta name="twitter:description" content="UIUC student building GPU-accelerated ML systems, data pipelines, and research tools — with a soft spot for birds." />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 44'%3E%3Crect width='80' height='44' rx='10' fill='%23bb6f4e'/%3E%3Cpath d='M13 24c10-5 19-4 29 4 3-11 12-19 25-23-5 8-7 16-5 24 10-2 18 1 25 8-17-5-30-1-39 7-6-8-18-15-35-20z' fill='%23fbf5ee'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-1" aria-hidden="true"></div>
+  <div class="ambient ambient-2" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav shell">
+      <a class="brand" href="#top">
+        <span class="brand-dot"></span>
+        Arina Zhou
+      </a>
+
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
+        <a class="nav-pill" href="mailto:arinaz2@illinois.edu">Say hi</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">
+          <span>UIUC</span>
+          <span class="eyebrow-sep">•</span>
+          <span>Software</span>
+          <span class="eyebrow-sep">•</span>
+          <span>Data</span>
+          <span class="eyebrow-sep">•</span>
+          <span>Research</span>
+        </div>
+
+        <h1>
+          Building systems that feel
+          <em>useful, thoughtful,</em>
+          and a little curious.
+        </h1>
+
+        <p class="hero-lede">
+          I’m Arina — a UIUC student working across software engineering, data engineering,
+          machine learning systems, and research grounded in real-world data.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-dark" href="#work">Explore selected work <span>↘</span></a>
+          <a class="button button-ghost" href="https://github.com/arinazhou" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+
+        <div class="availability">
+          <span class="pulse"></span>
+          Open to Summer 2027 SWE / Data Engineering internships
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="portrait-frame">
+          <div class="portrait-placeholder">
+            <span class="placeholder-kicker">YOUR PHOTO</span>
+            <p>portrait / lab / candid image</p>
+          </div>
+        </div>
+
+        <div class="floating-card stat-card">
+          <span class="tiny-label">CURRENTLY</span>
+          <strong>UIUC</strong>
+          <small>building + researching</small>
+        </div>
+
+        <div class="floating-card bird-card">
+          <div class="bird-mark">⌁</div>
+          <div>
+            <span class="tiny-label">FIELD NOTE</span>
+            <strong>birds keep showing up</strong>
+          </div>
+        </div>
+
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <section class="ticker-wrap" aria-label="skills">
+      <div class="ticker">
+        <span>Python</span><i>✦</i><span>TypeScript</span><i>✦</i><span>SQL</span><i>✦</i>
+        <span>TensorFlow</span><i>✦</i><span>LangGraph</span><i>✦</i><span>FAISS</span><i>✦</i>
+        <span>AWS</span><i>✦</i><span>React Native</span><i>✦</i><span>Linux</span><i>✦</i>
+        <span>Python</span><i>✦</i><span>TypeScript</span><i>✦</i><span>SQL</span><i>✦</i>
+        <span>TensorFlow</span><i>✦</i><span>LangGraph</span><i>✦</i><span>FAISS</span><i>✦</i>
+        <span>AWS</span><i>✦</i><span>React Native</span><i>✦</i><span>Linux</span><i>✦</i>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section shell">
+      <div class="section-intro reveal">
+        <div>
+          <p class="section-kicker">01 / SELECTED WORK</p>
+          <h2>Things I’ve actually built,<br><em>tested, measured, and learned from.</em></h2>
+        </div>
+        <p class="intro-note">
+          A mix of engineering, ML systems, data, and research. Each project is a short story:
+          problem → decisions → implementation → result.
+        </p>
+      </div>
+
+      <!-- Featured -->
+      <article class="project project-hero reveal">
+        <div class="project-copy">
+          <div class="project-topline">
+            <span class="project-number">01</span>
+            <span class="project-type">ML systems · performance engineering</span>
+          </div>
+
+          <h3>Nighthawk</h3>
+          <p class="project-summary">
+            GPU-accelerated acoustic inference for an open-source nocturnal bird migration
+            detection system. I enabled GPU acceleration and refactored the inference
+            pipeline for speed, numerical stability, and reproducible deployment.
+          </p>
+
+          <div class="metric-row">
+            <div class="metric">
+              <strong>25×</strong>
+              <span>real-time inference (from 4.8×)</span>
+            </div>
+            <div class="metric">
+              <strong>5.2×</strong>
+              <span>net speedup</span>
+            </div>
+            <div class="metric">
+              <strong>CPU/GPU</strong>
+              <span>validated eval workflows</span>
+            </div>
+          </div>
+
+          <div class="chip-row">
+            <span>Python</span><span>TensorFlow</span><span>CUDA</span><span>Linux</span>
+          </div>
+
+          <div class="text-links">
+            <a href="https://github.com/arinazhou/Nighthawk" target="_blank" rel="noreferrer">View code ↗</a>
+          </div>
+        </div>
+
+        <div class="project-visual dark-visual">
+          <div class="visual-label">PLACEHOLDER / NIGHTHAWK</div>
+          <div class="visual-grid">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+            <div class="wave wave-4"></div>
+            <div class="wave wave-5"></div>
+          </div>
+          <p>Replace with spectrogram, benchmark chart, pipeline diagram, or field audio visual.</p>
+        </div>
+      </article>
+
+      <!-- Grid projects -->
+      <div class="project-grid">
+        <article class="project card-project reveal">
+          <div class="card-image warm-image">
+            <span class="image-tag">PRODUCT UI</span>
+            <div class="browser-mockup">
+              <div class="browser-top">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="browser-body">
+                <div class="mock-sidebar"></div>
+                <div class="mock-main">
+                  <div class="mock-line long"></div>
+                  <div class="mock-line medium"></div>
+                  <div class="mock-box"></div>
+                  <div class="mock-button"></div>
+                </div>
+              </div>
+            </div>
+            <div class="replace-note">Replace with your real Streamlit screenshot</div>
+          </div>
+
+          <div class="card-content">
+            <div class="project-topline">
+              <span class="project-number">02</span>
+              <span class="project-type">LLM · RAG · developer tools</span>
+            </div>
+            <h3>AI Engineering Assistant</h3>
+            <p>
+              Repository-aware RAG that indexes source code, retrieves relevant context,
+              and answers engineering questions with structured workflows.
+            </p>
+            <div class="chip-row">
+              <span>Python</span><span>OpenAI</span><span>LangGraph</span><span>FAISS</span>
+            </div>
+            <div class="text-links">
+              <a href="https://github.com/arinazhou/AI-Engineering-Assistant" target="_blank" rel="noreferrer">View code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project card-project reveal">
+          <div class="card-image sage-image">
+            <span class="image-tag">RESEARCH VISUAL</span>
+            <div class="map-mockup">
+              <div class="map-line one"></div>
+              <div class="map-line two"></div>
+              <div class="map-line three"></div>
+              <span class="site s1"></span>
+              <span class="site s2"></span>
+              <span class="site s3"></span>
+              <span class="site s4"></span>
+              <span class="site s5"></span>
+              <span class="arrow a1">↗</span>
+              <span class="arrow a2">→</span>
+              <span class="arrow a3">↙</span>
+            </div>
+            <div class="replace-note">Replace with Chicago map / light-vector visual / NMDS plot</div>
+          </div>
+
+          <div class="card-content">
+            <div class="project-topline">
+              <span class="project-number">03</span>
+              <span class="project-type">Data · GIS · research</span>
+            </div>
+            <h3>Chicago Bird Migration</h3>
+            <p>
+              Modular geospatial data pipelines for the Windy City Bird Lab, cleaning and
+              integrating heterogeneous sensor and monitoring data from 50+ sites and
+              generating model-ready features with GeoPandas and Rasterio.
+            </p>
+            <div class="chip-row">
+              <span>Python</span><span>GeoPandas</span><span>Rasterio</span><span>Raspberry Pi</span>
+            </div>
+            <div class="text-links">
+              <a href="mailto:arinaz2@illinois.edu">Ask about this work →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="project-grid lower-grid">
+        <article class="mini-project reveal">
+          <div class="mini-head">
+            <span>04</span><span>DATA · STREAMLIT</span>
+          </div>
+          <h3>H1BView</h3>
+          <p>A Streamlit dashboard exploring H1B sponsorship patterns from LCA filings — built to make a dense public dataset actually explorable.</p>
+          <a href="https://github.com/arinazhou/H1BView" target="_blank" rel="noreferrer">View project →</a>
+        </article>
+
+        <article class="mini-project mini-photo reveal">
+          <div class="mini-photo-placeholder">YOUR PROJECT IMAGE</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section shell">
+      <div class="section-intro reveal">
+        <div>
+          <p class="section-kicker">02 / EXPERIENCE</p>
+          <h2>Learning fastest when<br><em>there’s something real at stake.</em></h2>
+        </div>
+      </div>
+
+      <div class="experience-list">
+        <article class="experience-row reveal">
+          <div class="exp-year">May — Aug 2026</div>
+          <div class="exp-main">
+            <h3>Software Engineer Intern</h3>
+            <p class="exp-org">Nighthawk Acoustic Detection System · Van Doren Lab / Open Source</p>
+          </div>
+          <div class="exp-desc">
+            Enabled GPU acceleration for an open-source TensorFlow detection system,
+            taking inference throughput from 4.8× to 25× real-time. Refactored the
+            inference pipeline for numerical stability and built automated CPU/GPU
+            evaluation workflows for reproducible Linux deployment.
+          </div>
+        </article>
+
+        <article class="experience-row reveal">
+          <div class="exp-year">Aug 2025 — May 2026</div>
+          <div class="exp-main">
+            <h3>Research Software Developer</h3>
+            <p class="exp-org">Accessible Audio-Haptic Application · iSchool, UIUC</p>
+          </div>
+          <div class="exp-desc">
+            Built an end-to-end accessibility application that transforms live audio into
+            synchronized haptic feedback through a modular, event-driven pipeline, with
+            low-latency async interfaces between React Native and native Swift modules.
+          </div>
+        </article>
+
+        <article class="experience-row reveal">
+          <div class="exp-year">Jun 2025 — Present</div>
+          <div class="exp-main">
+            <h3>Software & Data Engineering Intern</h3>
+            <p class="exp-org">Windy City Bird Lab & NRES · UIUC, Chicago</p>
+          </div>
+          <div class="exp-desc">
+            Developed modular Python data pipelines to clean, integrate, and analyze
+            heterogeneous geospatial and sensor data from 50+ monitoring sites, automating
+            model-ready feature generation with GeoPandas and Rasterio.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TOOLBOX -->
+    <section class="section shell">
+      <div class="toolbox reveal">
+        <div class="toolbox-title">
+          <p class="section-kicker light">03 / TOOLBOX</p>
+          <h2>What I build with.</h2>
+          <p>Only the tools I’d be comfortable talking about in an interview.</p>
+        </div>
+
+        <div class="toolbox-grid">
+          <div class="toolbox-cell">
+            <span>01</span>
+            <h4>Languages</h4>
+            <p>Python · TypeScript · Java · Swift · SQL · C++ · JavaScript</p>
+          </div>
+          <div class="toolbox-cell">
+            <span>02</span>
+            <h4>Data & ML</h4>
+            <p>TensorFlow · FAISS · LangGraph · LangChain · RAG · Model Evaluation</p>
+          </div>
+          <div class="toolbox-cell">
+            <span>03</span>
+            <h4>Engineering</h4>
+            <p>Git · Linux · AWS Lambda · API Gateway · DynamoDB · React Native</p>
+          </div>
+          <div class="toolbox-cell accent-cell">
+            <span>04</span>
+            <h4>Currently exploring</h4>
+            <p>Distributed data systems, cloud data pipelines, and GPU performance tuning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section shell about">
+      <div class="about-collage reveal">
+        <div class="about-big">
+          <span>PERSONAL / FIELDWORK PHOTO</span>
+        </div>
+        <div class="about-small">
+          <span>BIRD PHOTO</span>
+        </div>
+        <div class="about-small peach">
+          <span>VOLLEYBALL / LIFE</span>
+        </div>
+      </div>
+
+      <div class="about-copy reveal">
+        <p class="section-kicker">04 / ABOUT</p>
+        <h2>Code is only part of the story.</h2>
+        <p class="about-lede">
+          I’m drawn to systems that connect software to something tangible:
+          acoustic data, ecological patterns, developer workflows, or people trying to get things done.
+        </p>
+        <p>
+          Outside of engineering, I’ve spent years around volleyball and now an unreasonable amount
+          of time around birds. Both taught me that patience, repetition, and teamwork matter more than
+          making everything look effortless.
+        </p>
+
+        <blockquote>
+          “Build things that make someone curious enough to ask the next question.”
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section shell">
+      <div class="education reveal">
+        <div>
+          <p class="section-kicker">05 / EDUCATION</p>
+          <h2>University of Illinois Urbana-Champaign</h2>
+          <p class="education-sub">B.S. Information Sciences + Data Science, minor in Computer Science · GPA 3.94/4.0 · Expected May 2028</p>
+        </div>
+        <div class="education-meta">
+          <span>Relevant coursework</span>
+          <p>Data Structures · Algorithms · Statistics · Data Science · Software Development</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+      <div class="shell contact-grid">
+        <div class="contact-copy reveal">
+          <p class="section-kicker light">LET’S TALK</p>
+          <h2>Have a role, project,<br>or weirdly interesting problem?</h2>
+          <p>
+            I’m currently looking for Summer 2027 software engineering and data engineering opportunities.
+          </p>
+        </div>
+
+        <div class="contact-actions reveal">
+          <a href="mailto:arinaz2@illinois.edu">Email me <span>↗</span></a>
+          <a href="https://www.linkedin.com/in/arinazhou" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          <a href="https://github.com/arinazhou" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          <a href="assets/resume.pdf" target="_blank" rel="noreferrer">Résumé <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="shell footer">
+        <span id="footer-year">© 2026 Arina Zhou</span>
+        <span class="footer-bird" aria-hidden="true">⌁</span>
+        <span>Software · Data · Research</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="scroll-bird" aria-hidden="true">
+    <svg viewBox="0 0 80 44">
+      <path d="M3 24c10-5 19-4 29 4 3-11 12-19 25-23-5 8-7 16-5 24 10-2 18 1 25 8-17-5-30-1-39 7-6-8-18-15-35-20z"/>
+    </svg>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
