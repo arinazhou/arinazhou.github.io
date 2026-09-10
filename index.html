@@ -217,44 +217,78 @@
         </article>
 
         <article class="project card-project reveal">
-          <div class="card-image sage-image has-photo">
-            <span class="image-tag">FIELD HARDWARE</span>
-            <img src="assets/img/chicago-hardware.jpg" alt="Raspberry Pi with PoE HAT used for acoustic monitoring stations" />
+          <div class="card-image dark-image has-video">
+            <span class="image-tag">PRODUCT DEMO</span>
+            <video class="project-video" src="assets/video/haptic-app.mp4" poster="assets/video/haptic-poster.jpg" controls preload="metadata" playsinline></video>
           </div>
 
           <div class="card-content">
             <div class="project-topline">
               <span class="project-number">03</span>
-              <span class="project-type">Data · GIS · research</span>
+              <span class="project-type">Mobile · accessibility</span>
             </div>
-            <h3>Chicago Bird Migration</h3>
+            <h3>Accessible Audio-Haptic App</h3>
             <p>
-              Modular geospatial data pipelines for the Windy City Bird Lab, cleaning and
-              integrating heterogeneous sensor and monitoring data from 50+ sites and
-              generating model-ready features with GeoPandas and Rasterio.
+              An end-to-end accessibility application that transforms live audio into
+              synchronized haptic feedback, through a modular, event-driven pipeline with
+              low-latency async interfaces between React Native and native Swift modules.
             </p>
             <div class="chip-row">
-              <span>Python</span><span>GeoPandas</span><span>Rasterio</span><span>Raspberry Pi</span>
-            </div>
-            <div class="text-links">
-              <a href="mailto:arinaz2@illinois.edu">Ask about this work →</a>
+              <span>React Native</span><span>TypeScript</span><span>Swift</span>
             </div>
           </div>
         </article>
       </div>
 
+      <!-- Full-width gallery project: no public repo, several field photos -->
+      <article class="project project-gallery reveal">
+        <div class="gallery-copy">
+          <div class="project-topline">
+            <span class="project-number">04</span>
+            <span class="project-type">Data · GIS · research</span>
+          </div>
+          <h3>Chicago Bird Migration</h3>
+          <p class="project-summary">
+            Modular geospatial data pipelines for the Windy City Bird Lab: cleaning and
+            integrating heterogeneous sensor and monitoring data from 50+ sites, generating
+            model-ready features with GeoPandas and Rasterio, and working hands-on with the
+            acoustic monitoring hardware and the birds themselves.
+          </p>
+          <div class="chip-row">
+            <span>Python</span><span>GeoPandas</span><span>Rasterio</span><span>Raspberry Pi</span>
+          </div>
+          <div class="text-links">
+            <a href="mailto:arinaz2@illinois.edu">Ask about this work →</a>
+          </div>
+        </div>
+
+        <div class="gallery-scroll" role="group" aria-label="Field photos from the Chicago Bird Migration project">
+          <img src="assets/img/chicago-fieldwork.jpg" alt="Setting up a bird monitoring station in the field" />
+          <img src="assets/img/chicago-hardware.jpg" alt="Raspberry Pi with PoE HAT used for acoustic monitoring stations" />
+          <img src="assets/img/chicago-bird-warbler.jpg" alt="A yellow warbler held during bird banding" />
+          <img src="assets/img/chicago-bird-catbird.jpg" alt="A gray catbird held during bird banding at a monitoring site" />
+          <img src="assets/img/chicago-skyline.jpg" alt="Overlooking the Chicago skyline during a team trip" />
+        </div>
+        <p class="gallery-hint">Scroll for more from the field →</p>
+      </article>
+
       <div class="project-grid lower-grid">
         <article class="mini-project reveal">
           <div class="mini-head">
-            <span>04</span><span>DATA · STREAMLIT</span>
+            <span>05</span><span>DATA · STREAMLIT</span>
           </div>
           <h3>H1BView</h3>
           <p>A Streamlit dashboard exploring H1B sponsorship patterns from LCA filings — built to make a dense public dataset actually explorable.</p>
           <a href="https://github.com/arinazhou/H1BView" target="_blank" rel="noreferrer">View project →</a>
         </article>
 
-        <article class="mini-project mini-photo reveal">
-          <img class="mini-photo-img" src="assets/img/mini-skyline.jpg" alt="Arina and friends on the Willis Tower Skydeck overlooking Chicago" />
+        <article class="mini-project reveal">
+          <div class="mini-head">
+            <span>06</span><span>MORE</span>
+          </div>
+          <h3>More on GitHub</h3>
+          <p>Open-source contributions, class projects, and other builds — volleyball analytics, habit trackers, and more live there too.</p>
+          <a href="https://github.com/arinazhou" target="_blank" rel="noreferrer">View GitHub →</a>
         </article>
       </div>
     </section>
@@ -349,12 +383,12 @@
     <section id="about" class="section shell about">
       <div class="about-collage reveal">
         <div class="about-big">
-          <img src="assets/img/about-fieldwork.jpg" alt="Arina Zhou setting up a bird monitoring station in the field" />
+          <span>PERSONAL PHOTO</span>
         </div>
         <div class="about-small">
-          <img src="assets/img/about-bird.jpg" alt="A yellow warbler held during bird banding" />
+          <span>VOLLEYBALL / LIFE</span>
         </div>
-        <div class="about-small peach">
+        <div class="about-small peach has-photo">
           <img src="assets/img/about-life.jpg" alt="Arina's pet budgie perched on a vase" />
         </div>
       </div>

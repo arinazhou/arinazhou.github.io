@@ -18,30 +18,39 @@ Then open `http://localhost:8000`.
 - `styles.css` — all styling
 - `script.js` — scroll reveal animations, smooth anchor scroll, scroll-following bird, footer year
 - `assets/resume.pdf` — résumé, linked from the nav and contact section
+- `assets/img/` — web-optimized photos (source HEIC originals live in `pics/`)
+- `assets/video/` — the haptic app demo video + poster frame
 
 ## Updating content
 
 Just edit `index.html` directly — sections are commented (`HERO`, `WORK`, `EXPERIENCE`, `TOOLBOX`, `ABOUT`, `EDUCATION`, `CONTACT`).
 
-## Adding real photos
+## Photo/video placement rules (for future updates)
 
-Several sections still use styled placeholder blocks in place of real images:
-- Hero portrait (`.portrait-placeholder`)
-- Nighthawk visual (`.dark-visual` — swap for a spectrogram, benchmark chart, or pipeline diagram)
-- AI Engineering Assistant card (`.warm-image` — swap for a real Streamlit screenshot)
-- Chicago Bird Migration card (`.sage-image` — swap for a map or field visual)
-- About section collage (`.about-big`, `.about-small` × 2 — fieldwork/bird/volleyball photos)
-- Mini project photo card (`.mini-photo-placeholder`)
+- Real photos only go on the project they actually belong to. A project with no photo keeps its designed CSS placeholder (wave visual, browser mockup, or dashed "PERSONAL PHOTO" block) rather than borrowing an unrelated image.
+- A project with multiple photos and no public repo to link to (currently: Chicago Bird Migration) gets a horizontal scrollable gallery (`.project-gallery` / `.gallery-scroll`) instead of one static image.
+- The only non-work personal photos are of Arina's budgie (hero portrait, About section) — everything else currently on the site is Chicago Bird Migration fieldwork.
 
-To replace a placeholder, drop your image in `assets/` and swap the placeholder `<div>` for:
+Still using placeholders: Nighthawk visual (spectrogram/benchmark chart), AI Engineering Assistant card (real Streamlit screenshot), and two About-collage slots (personal photo, volleyball/life).
 
-```html
-<img src="assets/your-photo.jpg" alt="Description of the photo">
+## Converting new photos/video
+
+New iPhone photos come in as HEIC/MOV, which don't render everywhere. Convert before adding to `assets/`:
+
+```bash
+# Photos: HEIC -> web JPG, resized + compressed
+sips -s format jpeg -s formatOptions 78 -Z 1200 pics/IMG_XXXX.HEIC --out assets/img/name.jpg
+
+# Video: HEVC -> H.264 (HEVC doesn't play in most non-Apple browsers)
+avconvert --source "pics/video.mov" --preset PresetAppleM4V1080pHD --output assets/video/name.mp4 --replace
+# Poster frame from a video:
+qlmanage -t -s 900 -o /tmp pics/video.mov   # produces /tmp/video.mov.png
+sips -s format jpeg -s formatOptions 80 /tmp/video.mov.png --out assets/video/name-poster.jpg
 ```
 
 ## Deploying updates
 
-This repo is deployed via **GitHub Pages** from the `main` branch. Any push to `main` goes live within a minute or two:
+This repo is deployed via **GitHub Pages** from the `master` branch. Any push to `master` goes live within a minute or two:
 
 ```bash
 git add -A
