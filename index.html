@@ -4,32 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arina Zhou — Software & Data Engineer</title>
-  <meta name="description" content="Arina Zhou — UIUC student building GPU-accelerated ML systems, data pipelines, and research software." />
+  <meta name="description" content="Arina Zhou — UIUC student building GPU-accelerated ML systems, geospatial data pipelines, and research software." />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Arina Zhou — Software & Data Engineer" />
-  <meta property="og:description" content="UIUC student building GPU-accelerated ML systems, data pipelines, and research software." />
+  <meta property="og:description" content="UIUC student building GPU-accelerated ML systems, geospatial data pipelines, and research software." />
   <meta property="og:url" content="https://arinazhou.github.io" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Arina Zhou — Software & Data Engineer" />
-  <meta name="twitter:description" content="UIUC student building GPU-accelerated ML systems, data pipelines, and research software." />
+  <meta name="twitter:description" content="UIUC student building GPU-accelerated ML systems, geospatial data pipelines, and research software." />
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 44'%3E%3Crect width='80' height='44' rx='10' fill='%23a65d3f'/%3E%3Cpath d='M13 24c10-5 19-4 29 4 3-11 12-19 25-23-5 8-7 16-5 24 10-2 18 1 25 8-17-5-30-1-39 7-6-8-18-15-35-20z' fill='%23fbf7f2'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 44'%3E%3Crect width='80' height='44' rx='10' fill='%237dd3fc'/%3E%3Cpath d='M13 24c10-5 19-4 29 4 3-11 12-19 25-23-5 8-7 16-5 24 10-2 18 1 25 8-17-5-30-1-39 7-6-8-18-15-35-20z' fill='%230c4a6e'/%3E%3C/svg%3E" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="nav-wrap">
     <nav class="nav shell">
-      <a class="brand" href="#top">Arina Zhou</a>
+      <a class="brand" href="#top"><span class="brand-mark"></span>Arina Zhou</a>
       <div class="nav-links">
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
-        <a href="assets/resume.pdf" target="_blank" rel="noreferrer">Résumé</a>
+        <a class="nav-cta" href="assets/resume.pdf" target="_blank" rel="noreferrer">Résumé</a>
       </div>
     </nav>
   </header>
@@ -41,21 +41,22 @@
         <p class="kicker">Software & Data Engineering · UIUC</p>
         <h1>Arina Zhou</h1>
         <p class="lede">
-          I build ML systems, data pipelines, and research software that work on real-world data:
-          GPU-accelerated bird-migration detection, geospatial sensor pipelines, and accessible mobile apps.
+          I build <mark class="hl sky">ML systems</mark>, <mark class="hl mint">data pipelines</mark>, and
+          <mark class="hl lav">research software</mark> for real-world data, from GPU-accelerated
+          bird-migration detection to satellite night-light analysis.
         </p>
 
-        <ul class="facts">
-          <li><strong>25×</strong> real-time GPU inference on Nighthawk</li>
-          <li><strong>50+</strong> monitoring sites in production pipelines</li>
-          <li><strong>3.94</strong> GPA · Information Sciences + Data Science</li>
-        </ul>
+        <div class="stats">
+          <div class="stat sky"><strong>25×</strong><span>real-time GPU inference</span></div>
+          <div class="stat mint"><strong>85K+</strong><span>bird detections modeled</span></div>
+          <div class="stat peach"><strong>3.94</strong><span>GPA · InfoSci + Data Sci</span></div>
+        </div>
 
         <div class="actions">
           <a class="button primary" href="mailto:arinaz2@illinois.edu">Email me</a>
-          <a class="button" href="assets/resume.pdf" target="_blank" rel="noreferrer">Résumé</a>
           <a class="button" href="https://github.com/arinazhou" target="_blank" rel="noreferrer">GitHub</a>
           <a class="button" href="https://www.linkedin.com/in/arinazhou" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button" href="assets/resume.pdf" target="_blank" rel="noreferrer">Résumé</a>
         </div>
 
         <p class="status"><span class="dot"></span>Seeking Summer 2027 SWE / Data Engineering internships</p>
@@ -68,12 +69,10 @@
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section shell">
-      <h2 class="section-title">Experience</h2>
+      <h2 class="section-title"><span class="bar sky"></span>Experience</h2>
 
       <article class="entry">
-        <div class="entry-meta">
-          <span class="date">May – Aug 2026</span>
-        </div>
+        <p class="date">May – Aug 2026</p>
         <div class="entry-body">
           <h3>Software Engineer Intern <span class="org">· Nighthawk, Van Doren Lab</span></h3>
           <p>
@@ -82,9 +81,9 @@
             reproducible Linux deployment, with automated CPU/GPU evaluation workflows.
           </p>
           <div class="metrics">
-            <div><strong>4.8× → 25×</strong><span>real-time throughput</span></div>
-            <div><strong>5.2×</strong><span>net speedup</span></div>
-            <div><strong>CPU / GPU</strong><span>validated evaluation</span></div>
+            <div class="sky"><strong>4.8× → 25×</strong><span>real-time throughput</span></div>
+            <div class="mint"><strong>5.2×</strong><span>net speedup</span></div>
+            <div class="lav"><strong>CPU / GPU</strong><span>validated evaluation</span></div>
           </div>
           <div class="tags"><span>Python</span><span>TensorFlow</span><span>CUDA</span><span>Linux</span></div>
           <a class="link" href="https://github.com/arinazhou/Nighthawk" target="_blank" rel="noreferrer">Repository ↗</a>
@@ -92,35 +91,13 @@
       </article>
 
       <article class="entry">
-        <div class="entry-meta">
-          <span class="date">Aug 2025 – May 2026</span>
-        </div>
-        <div class="entry-body">
-          <h3>Research Software Developer <span class="org">· iSchool, UIUC</span></h3>
-          <div class="split">
-            <div>
-            <p>
-              Built an end-to-end accessibility app that turns live audio into synchronized haptic feedback.
-              Designed a modular, event-driven pipeline with low-latency async interfaces between
-              React Native and native Swift modules.
-            </p>
-              <div class="tags"><span>React Native</span><span>TypeScript</span><span>Swift</span></div>
-            </div>
-            <video class="demo" src="assets/video/haptic-app.mp4" poster="assets/video/haptic-poster.jpg" controls preload="metadata" playsinline aria-label="Demo of the audio-haptic app"></video>
-          </div>
-        </div>
-      </article>
-
-      <article class="entry">
-        <div class="entry-meta">
-          <span class="date">Jun 2025 – Present</span>
-        </div>
+        <p class="date">Jun 2025 – Present</p>
         <div class="entry-body">
           <h3>Software & Data Engineering Intern <span class="org">· Windy City Bird Lab & NRES, UIUC</span></h3>
           <p>
-            Modular Python pipelines that clean, integrate, and analyze heterogeneous geospatial and sensor
-            data from 50+ monitoring sites, automating model-ready feature generation with GeoPandas and
-            Rasterio. Also work hands-on with the Raspberry Pi acoustic monitoring hardware in the field.
+            Modular Python pipelines that clean, integrate, and analyze geospatial and sensor data from 50+
+            monitoring sites, automating model-ready feature generation with GeoPandas and Rasterio. I also
+            work hands-on in the field with the Raspberry Pi acoustic monitoring stations, and with the birds.
           </p>
           <div class="strip" role="group" aria-label="Field photos from the Chicago bird migration project">
             <img src="assets/img/chicago-fieldwork.jpg" alt="Setting up a bird monitoring station in the field" loading="lazy" />
@@ -129,33 +106,149 @@
             <img src="assets/img/chicago-bird-catbird.jpg" alt="A gray catbird held during bird banding" loading="lazy" />
           </div>
           <div class="tags"><span>Python</span><span>GeoPandas</span><span>Rasterio</span><span>Raspberry Pi</span></div>
+          <a class="link" href="#migration">See the research: Chicago Night Migration ↓</a>
+        </div>
+      </article>
+
+      <article class="entry">
+        <p class="date">Aug 2025 – May 2026</p>
+        <div class="entry-body">
+          <h3>Research Software Developer <span class="org">· iSchool, UIUC</span></h3>
+          <div class="split">
+            <div>
+              <p>
+                Built an end-to-end accessibility app that turns live audio into synchronized haptic feedback.
+                Designed a modular, event-driven pipeline with low-latency async interfaces between
+                React Native and native Swift modules.
+              </p>
+              <div class="tags"><span>React Native</span><span>TypeScript</span><span>Swift</span></div>
+            </div>
+            <video class="demo" src="assets/video/haptic-app.mp4" poster="assets/video/haptic-poster.jpg" controls preload="metadata" playsinline aria-label="Demo of the audio-haptic app"></video>
+          </div>
         </div>
       </article>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section shell">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title"><span class="bar lav"></span>Projects</h2>
+
+      <!-- Featured: Chicago Night Migration -->
+      <article id="migration" class="feature sky">
+        <div class="feature-copy">
+          <p class="card-type">Research · Geospatial data · Statistics</p>
+          <h3>Chicago Night Migration</h3>
+          <p>
+            Why do different parts of Chicago hear different migrating birds? An auditable pipeline turns raw
+            detector exports, satellite night-light rasters, and GIS layers into 30+ per-site features. An
+            exhaustive search over 92 regression models then finds the drivers.
+          </p>
+          <p class="finding">
+            <strong>Finding:</strong> artificial light at night is the strongest predictor of community
+            composition, with more than twice the effect of any other variable (adj R² 0.53, p &lt; 10⁻⁶).
+          </p>
+          <div class="kpis">
+            <span><strong>41</strong> sites</span>
+            <span><strong>94</strong> species</span>
+            <span><strong>85K+</strong> detections</span>
+            <span><strong>92</strong> models</span>
+          </div>
+          <div class="tags"><span>Python</span><span>GeoPandas</span><span>Rasterio</span><span>statsmodels</span><span>R (vegan)</span></div>
+          <a class="link" href="https://github.com/arinazhou/chicago-night-migration" target="_blank" rel="noreferrer">Repository ↗</a>
+        </div>
+
+        <div class="viewer" data-gallery="migration">
+          <button class="viewer-main" type="button" aria-label="Open figure full size">
+            <img src="assets/img/projects/migration-night-lights.jpg" alt="SDGSAT-1 nighttime radiance over the Chicago region" />
+          </button>
+          <p class="viewer-caption">SDGSAT-1 nighttime radiance over Chicago, the input for the light features.</p>
+          <div class="thumbs">
+            <button type="button" class="active" data-src="assets/img/projects/migration-night-lights.jpg" data-caption="SDGSAT-1 nighttime radiance over Chicago, the input for the light features."><img src="assets/img/projects/migration-night-lights.jpg" alt="" loading="lazy" /></button>
+            <button type="button" data-src="assets/img/projects/migration-composition.png" data-caption="Species composition across 41 sites, ordered along the main community gradient (NMDS1)."><img src="assets/img/projects/migration-composition.png" alt="" loading="lazy" /></button>
+            <button type="button" data-src="assets/img/projects/migration-model-search.gif" data-caption="Exhaustive search over 92 candidate models, ranked by AIC."><img src="assets/img/projects/migration-model-search.gif" alt="" loading="lazy" /></button>
+            <button type="button" data-src="assets/img/projects/migration-coefficients.png" data-caption="Standardized effects in the selected model: night light dominates."><img src="assets/img/projects/migration-coefficients.png" alt="" loading="lazy" /></button>
+            <button type="button" data-src="assets/img/projects/migration-light-vector.gif" data-caption="Custom feature: a brightness-weighted vector that points toward the dominant light source."><img src="assets/img/projects/migration-light-vector.gif" alt="" loading="lazy" /></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projects with visuals -->
       <div class="cards">
-        <article class="card">
-          <p class="card-type">LLM · RAG · Developer tools</p>
-          <h3>AI Engineering Assistant</h3>
-          <p>Repository-aware RAG that indexes source code, retrieves relevant context, and answers engineering questions through structured LangGraph workflows.</p>
-          <div class="tags"><span>Python</span><span>OpenAI</span><span>LangGraph</span><span>FAISS</span></div>
-          <a class="link" href="https://github.com/arinazhou/AI-Engineering-Assistant" target="_blank" rel="noreferrer">Code ↗</a>
+        <article class="card lav">
+          <button class="card-media" type="button" data-gallery-open="tracemind" aria-label="Open Tracemind screenshot">
+            <img src="assets/img/projects/tracemind-dashboard.jpg" alt="Tracemind dashboard with pattern progress and activity heatmap" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <p class="card-type">Full-stack · Developer tools</p>
+            <h3>Tracemind</h3>
+            <p>Algorithm lab for LeetCode prep: 125 problems in 17 patterns, line-by-line solution replays, and an AST-based Big-O analyzer that runs on FastAPI or in the browser via Pyodide.</p>
+            <div class="tags"><span>React</span><span>TypeScript</span><span>FastAPI</span><span>Pyodide</span></div>
+            <div class="links">
+              <a class="link" href="https://arinazhou.github.io/tracemind/" target="_blank" rel="noreferrer">Live app ↗</a>
+              <a class="link" href="https://github.com/arinazhou/tracemind" target="_blank" rel="noreferrer">Code ↗</a>
+            </div>
+          </div>
         </article>
-        <article class="card">
-          <p class="card-type">Data · Visualization</p>
-          <h3>H1BView</h3>
-          <p>Streamlit dashboard for exploring H1B sponsorship patterns in public LCA filings, turning a dense government dataset into something searchable.</p>
-          <div class="tags"><span>Python</span><span>Streamlit</span></div>
-          <a class="link" href="https://github.com/arinazhou/H1BView" target="_blank" rel="noreferrer">Code ↗</a>
+
+        <article class="card peach">
+          <button class="card-media dark" type="button" data-gallery-open="lakefront" aria-label="Open night-light color figures">
+            <img src="assets/img/projects/lakefront-true-color.jpg" alt="Chicago true-color satellite image at night" loading="lazy" />
+            <span class="count">2 figures</span>
+          </button>
+          <div class="card-body">
+            <p class="card-type">Remote sensing · In progress</p>
+            <h3>Chicago Night-Light Color</h3>
+            <p>Exploratory analysis of SDGSAT-1 color night imagery for a lakefront conservation study, using band ratios as a proxy for lamp type (warm sodium vs. cool white LED).</p>
+            <div class="tags"><span>Python</span><span>Rasterio</span><span>Jupyter</span></div>
+            <a class="link" href="https://github.com/arinazhou/chicago-lakefront-conservation" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
         </article>
-        <article class="card">
-          <p class="card-type">More</p>
-          <h3>Other work</h3>
-          <p>Open-source contributions, coursework, and side projects, including volleyball analytics and a habit tracker.</p>
-          <a class="link" href="https://github.com/arinazhou" target="_blank" rel="noreferrer">GitHub ↗</a>
+
+        <article class="card mint">
+          <button class="card-media" type="button" data-gallery-open="h1b" aria-label="Open H1BView screenshots">
+            <img src="assets/img/projects/h1b-home.jpg" alt="H1BView dashboard filtering H1B records by job title" loading="lazy" />
+            <span class="count">3 views</span>
+          </button>
+          <div class="card-body">
+            <p class="card-type">Data · Visualization</p>
+            <h3>H1BView</h3>
+            <p>Streamlit and Tableau dashboards for exploring H1B sponsorship in public LCA filings: search by job title, compare salaries by sponsor, and map approvals and denials by state.</p>
+            <div class="tags"><span>Python</span><span>Streamlit</span><span>Plotly</span><span>Tableau</span></div>
+            <a class="link" href="https://github.com/arinazhou/H1BView" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Text-only projects -->
+      <div class="cards compact">
+        <article class="card rose">
+          <div class="card-body">
+            <p class="card-type">Backend · Java</p>
+            <h3>FeatherLog</h3>
+            <p>Spring Boot API I built for my budgie: tracks weigh-ins, flags gradual weight loss early using median-baseline trend analysis, and schedules care reminders.</p>
+            <div class="tags"><span>Java 21</span><span>Spring Boot</span><span>PostgreSQL</span><span>Docker</span></div>
+            <a class="link" href="https://github.com/arinazhou/featherlog" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+        <article class="card sky">
+          <div class="card-body">
+            <p class="card-type">LLM · RAG</p>
+            <h3>AI Engineering Assistant</h3>
+            <p>Repository-aware RAG that indexes source code, retrieves relevant context, and answers engineering questions through structured LangGraph workflows.</p>
+            <div class="tags"><span>Python</span><span>LangGraph</span><span>FAISS</span><span>OpenAI</span></div>
+            <a class="link" href="https://github.com/arinazhou/AI-Engineering-Assistant" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+        <article class="card neutral">
+          <div class="card-body">
+            <p class="card-type">More on GitHub</p>
+            <ul class="more">
+              <li><a href="https://github.com/arinazhou/sandia_data_challenge_2025" target="_blank" rel="noreferrer">Sandia Data Challenge 2025</a><span>manufacturing scrap-rate analysis</span></li>
+              <li><a href="https://github.com/arinazhou/illini-volleyball-analytics" target="_blank" rel="noreferrer">Illini Volleyball Analytics</a><span>player performance modeling</span></li>
+              <li><a href="https://github.com/arinazhou/public-health-behaviour-data-analysis---marijuana-use" target="_blank" rel="noreferrer">BRFSS Health Behavior</a><span>public health microdata analysis</span></li>
+              <li><a href="https://github.com/arinazhou/habit-tracker" target="_blank" rel="noreferrer">Habit Tracker</a><span>JavaScript web app</span></li>
+            </ul>
+          </div>
         </article>
       </div>
     </section>
@@ -163,15 +256,16 @@
     <!-- SKILLS + EDUCATION -->
     <section class="section shell two-col">
       <div>
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title"><span class="bar mint"></span>Skills</h2>
         <dl class="skills">
-          <dt>Languages</dt><dd>Python, TypeScript, Java, Swift, SQL, C++, JavaScript</dd>
-          <dt>Data & ML</dt><dd>TensorFlow, FAISS, LangGraph, LangChain, RAG, model evaluation</dd>
-          <dt>Infrastructure</dt><dd>Linux, Git, AWS Lambda, API Gateway, DynamoDB, React Native</dd>
+          <dt>Languages</dt><dd>Python, Java, TypeScript, SQL, Swift, C++, JavaScript</dd>
+          <dt>Data & ML</dt><dd>TensorFlow, GeoPandas, Rasterio, statsmodels, FAISS, LangGraph, RAG</dd>
+          <dt>Backend & Infra</dt><dd>Spring Boot, FastAPI, PostgreSQL, Docker, Linux, AWS (Lambda, API Gateway, DynamoDB)</dd>
+          <dt>Frontend</dt><dd>React, React Native, Streamlit, Tableau</dd>
         </dl>
       </div>
       <div>
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title"><span class="bar peach"></span>Education</h2>
         <p class="edu-school">University of Illinois Urbana-Champaign</p>
         <p class="edu-detail">B.S. Information Sciences + Data Science, minor in Computer Science</p>
         <p class="edu-detail muted">GPA 3.94 / 4.0 · Expected May 2028</p>
@@ -185,12 +279,12 @@
         <img src="assets/img/about-life.jpg" alt="Arina's pet budgie perched on a vase" loading="lazy" />
       </figure>
       <div>
-        <h2 class="section-title">Outside of work</h2>
+        <h2 class="section-title"><span class="bar rose"></span>Outside of work</h2>
         <p>
           I like software that touches something physical: acoustic data, ecological patterns, people's
           everyday routines. Much of my free time goes to birds, both in the field with the lab and at home
-          with my budgie (pictured). Before that it was years of volleyball, which taught me what I still rely on
-          as an engineer: patience, repetition, and trusting the team.
+          with my budgie (pictured, and the reason FeatherLog exists). Before that it was years of volleyball,
+          which taught me what I still rely on as an engineer: patience, repetition, and trusting the team.
         </p>
       </div>
     </section>
@@ -206,6 +300,30 @@
       </span>
     </div>
   </footer>
+
+  <!-- Galleries opened from project cards -->
+  <template data-gallery-items="tracemind">
+    <img src="assets/img/projects/tracemind-dashboard.jpg" alt="Tracemind dashboard: pattern progress, activity heatmap, and 17 pattern cards." />
+  </template>
+  <template data-gallery-items="lakefront">
+    <img src="assets/img/projects/lakefront-true-color.jpg" alt="SDGSAT-1 true-color night imagery: the full scene and Chicago at 40 m." />
+    <img src="assets/img/projects/lakefront-color-maps.jpg" alt="Lit-pixel color ratios across Chicago: blue/green (cooler, whiter light) and red/green (warmer light)." />
+  </template>
+  <template data-gallery-items="h1b">
+    <img src="assets/img/projects/h1b-home.jpg" alt="Streamlit dashboard: search LCA filings by job title." />
+    <img src="assets/img/projects/h1b-salary_comparison.jpg" alt="Average salary by sponsor and job title (Plotly)." />
+    <img src="assets/img/projects/h1b-tableau_map_denied.jpg" alt="Tableau map of denied cases by state." />
+  </template>
+
+  <dialog class="lightbox" aria-label="Figure viewer">
+    <button class="lb-close" type="button" aria-label="Close">×</button>
+    <button class="lb-nav lb-prev" type="button" aria-label="Previous figure">‹</button>
+    <figure>
+      <img alt="" />
+      <figcaption></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" type="button" aria-label="Next figure">›</button>
+  </dialog>
 
   <script src="script.js"></script>
 </body>
