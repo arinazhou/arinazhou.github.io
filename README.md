@@ -2,7 +2,7 @@
 
 Live at: **https://arinazhou.github.io**
 
-Editorial, warm, recruiter-friendly personal portfolio. Static HTML/CSS/JS, no build step.
+Clean, compact, recruiter-friendly personal portfolio (light + dark mode). Static HTML/CSS/JS, no build step.
 
 ## Preview locally
 
@@ -16,22 +16,20 @@ Then open `http://localhost:8000`.
 
 - `index.html` — all page content
 - `styles.css` — all styling
-- `script.js` — scroll reveal animations, smooth anchor scroll, scroll-following bird, footer year
+- `script.js` — footer year
 - `assets/resume.pdf` — résumé, linked from the nav and contact section
 - `assets/img/` — web-optimized photos (source HEIC originals live in `pics/`)
 - `assets/video/` — the haptic app demo video + poster frame
 
 ## Updating content
 
-Just edit `index.html` directly — sections are commented (`HERO`, `WORK`, `EXPERIENCE`, `TOOLBOX`, `ABOUT`, `EDUCATION`, `CONTACT`).
+Just edit `index.html` directly — sections are commented (`HERO`, `EXPERIENCE`, `PROJECTS`, `SKILLS + EDUCATION`, `ABOUT`).
 
 ## Photo/video placement rules (for future updates)
 
-- Real photos only go on the project they actually belong to. A project with no photo keeps its designed CSS placeholder (wave visual, browser mockup, or dashed "PERSONAL PHOTO" block) rather than borrowing an unrelated image.
-- A project with multiple photos and no public repo to link to (currently: Chicago Bird Migration) gets a horizontal scrollable gallery (`.project-gallery` / `.gallery-scroll`) instead of one static image.
-- The only non-work personal photos are of Arina's budgie (hero portrait, About section) — everything else currently on the site is Chicago Bird Migration fieldwork.
-
-Still using placeholders: Nighthawk visual (spectrogram/benchmark chart), AI Engineering Assistant card (real Streamlit screenshot), and two About-collage slots (personal photo, volleyball/life).
+- Real photos only go with the work they belong to. Work without a photo stays text-only; don't borrow unrelated images or add placeholder visuals.
+- Media sits inside its Experience entry: the haptic demo video beside the iSchool role, and the Chicago fieldwork photos as a 4-up strip under the Windy City Bird Lab role.
+- The only non-work personal photos are of Arina's budgie (hero portrait, About section).
 
 ## Converting new photos/video
 
